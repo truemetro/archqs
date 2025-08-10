@@ -25,6 +25,8 @@ rm -rf ~/.config/omp
 rm -rf ~/.config/waybar
 mv ./dotfiles/* ~/.config/
 
+mv ~/src/archqs/.bashrc ~/.bashrc
+
 cd ~/Downloads
 curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
 source ~/.bashrc
