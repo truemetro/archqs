@@ -27,8 +27,7 @@ mv ./dotfiles/* ~/.config/
 
 mv ~/src/archqs/.bashrc ~/.bashrc
 
-cd ~/Downloads
-curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 source ~/.bashrc
 brew install jandedobbeleer/oh-my-posh/oh-my-posh
 oh-my-posh font install FiraCode
