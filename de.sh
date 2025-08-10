@@ -25,7 +25,7 @@ rm -rf ~/.config/omp
 rm -rf ~/.config/waybar
 mv ./dotfiles/* ~/.config/
 
-mv ~/src/archqs/.bashrc ~/.bashrc
+mv ~/src/archqs/bashrc ~/.bashrc
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 /bin/bash -c $("brew install jandedobbeleer/oh-my-posh/oh-my-posh")
