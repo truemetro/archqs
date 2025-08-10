@@ -15,4 +15,11 @@ echo "Installing apps..."
 sudo pacman -S --needed steam discord firefox
 
 echo "Moving dotfiles..."
+rm -rf ~/.config/Thunar
+rm -rf ~/.config/alacritty
+rm -rf ~/.config/fastfetch
+rm -rf ~/.config/hypr
+rm -rf ~/.config/nvim
+rm -rf ~/.config/omp
+rm -rf ~/.config/waybar
 mv ./dotfiles/* ~/.config/
