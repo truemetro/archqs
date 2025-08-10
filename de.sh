@@ -28,26 +28,7 @@ mv ./dotfiles/* ~/.config/
 mv ~/src/archqs/.bashrc ~/.bashrc
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-source ~/.bashrc
-brew install jandedobbeleer/oh-my-posh/oh-my-posh
-oh-my-posh font install FiraCode
+/bin/bash -c $("brew install jandedobbeleer/oh-my-posh/oh-my-posh")
+/bin/bash -c $("oh-my-posh font install FiraCode")
 
-sudo rm -f /etc/greetd/config.toml
-
-sudo touch /etc/greetd/config.toml
-sudo echo "[terminal]
-# The VT to run the greeter on. Can be \"next\", \"current\" or a number
-# designating the VT.
-vt = 1
-
-# The default session, also known as the greeter.
-[default_session]
-
-# \`agreety\` is the bundled agetty/login-lookalike. You can replace \`/bin/sh\`
-# with whatever you want started, such as \`sway\`.
-command = \"tuigreet --cmd hyprland\"
-
-# The user to run the command as. The privileges this user must have depends
-# on the greeter. A graphical greeter may for example require the user to be
-# in the \`video\` group.
-user = \"greeter\"" > /etc/greetd/config.toml
+sudo mv -f ./config.toml /etc/greetd/config.toml
