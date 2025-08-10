@@ -10,18 +10,10 @@ sudo pacman -S amd-ucode networkmanager neovim base-devel git man-db man-pages j
 sudo pacman -S greetd-tuigreet waybar hyprland hypridle hyprland-qt-support hyprland-qtutils hyprlang hyprlock hyprpicker hyprshot hyprutils cliphist xdg-desktop-portal-hyprland wofi dunst thunar
 
 # 4: fonts!!
-sudo pacman -S noto-fonts noto-fonts-extra noto-fonts-emoji noto-foncts-cjk
+sudo pacman -S noto-fonts noto-fonts-extra noto-fonts-emoji noto-fonts-cjk
 
 # 5: theming
-sudo pacman -S adwaita-qt5-git adwaita-qt6-git qt6ct nwg-look
+sudo pacman -S qt6ct nwg-look
 
 # 6: some apps I want
 sudo pacman -S steam discord firefox
-
-# 7: set up an AUR helper
-cd ~
-mkdir ./src
-cd ./src
-git clone https://aur.archlinux.org/paru.git
-cd paru
-makepkg -si
