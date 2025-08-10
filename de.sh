@@ -1,6 +1,6 @@
 echo "Installing hyprland..."
 # 3: DE components
-sudo pacman -S --needed greetd-tuigreet waybar hyprland hypridle hyprland-qt-support hyprland-qtutils hyprlang hyprlock hyprpicker hyprshot hyprutils cliphist xdg-desktop-portal-hyprland wofi dunst thunar
+sudo pacman -S --needed  greetd-tuigreet waybar hyprland hypridle hyprland-qt-support hyprland-qtutils hyprlang hyprlock hyprpicker hyprshot hyprutils cliphist xdg-desktop-portal-hyprland wofi dunst thunar alacritty
 
 echo "Installing fonts..."
 # 4: fonts!!
