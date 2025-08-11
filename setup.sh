@@ -4,9 +4,9 @@ sudo pacman -Syu
 chmod +x ./*.sh
 
 echo "Installing system components..."
-./system.sh
+./scripts/system.sh
 echo "Installing DE..."
-./de.sh
+./scripts/de.sh
 
 read -p "Do you want to install paru? (y/n): " user_input
 
@@ -15,7 +15,7 @@ user_input_lower=$(echo "$user_input" | tr '[:upper:]' '[:lower:]')
 
 if [[ "$user_input_lower" == "y" ]]; then
   echo "Installing AUR helper..."
-  ./helper.sh
+  ./scripts/helper.sh
 fi
 
 echo "Script finished!"
