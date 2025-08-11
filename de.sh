@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "Installing hyprland..."
 # 3: DE components
 sudo pacman -S --needed  greetd-tuigreet waybar hyprland hypridle hyprland-qt-support hyprland-qtutils hyprlang hyprlock hyprpicker hyprshot hyprutils cliphist xdg-desktop-portal-hyprland wofi dunst thunar alacritty
@@ -23,3 +24,9 @@ rm -rf ~/.config/nvim
 rm -rf ~/.config/omp
 rm -rf ~/.config/waybar
 mv ./dotfiles/* ~/.config/
+
+cd ~/Downloads
+curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
+source ~/.bashrc
+brew install jandedobbeleer/oh-my-posh/oh-my-posh
+oh-my-posh font install FiraCode

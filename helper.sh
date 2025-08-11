@@ -1,3 +1,4 @@
+#!/bin/bash
 # INSTALL PARU
 cd ~
 mkdir ./src

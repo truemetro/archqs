@@ -1,3 +1,4 @@
+#!/bin/bash
 # this script gets you up and running with a fairly minimal hyprland install
 
 # 2: install core utilities
