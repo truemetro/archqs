@@ -23,12 +23,12 @@ rm -rf ~/.config/hypr
 rm -rf ~/.config/nvim
 rm -rf ~/.config/omp
 rm -rf ~/.config/waybar
-mv ./dotfiles/* ~/.config/
+mv ./config_files/dotfiles/* ~/.config/
 
-mv ~/src/archqs/bashrc ~/.bashrc
+mv ~/src/archqs/config_files/bashrc ~/.bashrc
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-/bin/bash -c $("brew install jandedobbeleer/oh-my-posh/oh-my-posh")
-/bin/bash -c $("oh-my-posh font install FiraCode")
+/bin/bash -c "$(brew install jandedobbeleer/oh-my-posh/oh-my-posh)"
+/bin/bash -c "$(oh-my-posh font install FiraCode)"
 
-sudo mv -f ./config.toml /etc/greetd/config.toml
+sudo mv -f ./config_files/config.toml /etc/greetd/config.toml
