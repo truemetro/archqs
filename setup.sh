@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo pacman -Syu
 
-chmod +x ./*.sh
+chmod +x ./scripts/*.sh
 
 echo "Installing system components..."
 ./scripts/system.sh
