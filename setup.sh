@@ -5,8 +5,6 @@ chmod +x ./scripts/*.sh
 
 echo "Installing system components..."
 ./scripts/system.sh
-echo "Installing DE..."
-./scripts/de.sh
 
 read -p "Do you want to install paru? (y/n): " user_input
 
@@ -17,5 +15,8 @@ if [[ "$user_input_lower" == "y" ]]; then
   echo "Installing AUR helper..."
   ./scripts/helper.sh
 fi
+
+echo "Installing DE..."
+./scripts/de.sh
 
 echo "Script finished!"
