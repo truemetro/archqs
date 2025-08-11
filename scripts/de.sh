@@ -23,9 +23,14 @@ rm -rf ~/.config/hypr
 rm -rf ~/.config/nvim
 rm -rf ~/.config/omp
 rm -rf ~/.config/waybar
+
+mkdir ~/.config
+
 mv ./config_files/dotfiles/* ~/.config/
 
 mv ~/src/archqs/config_files/bashrc ~/.bashrc
+
+source ~/.bashrc
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 /bin/bash -c "$(brew install jandedobbeleer/oh-my-posh/oh-my-posh)"
